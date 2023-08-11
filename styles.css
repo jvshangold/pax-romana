@@ -2,6 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: rgb(238,75,43);
+    background: linear-gradient(90deg, rgba(238,75,43,1) 0%, rgba(233,126,136,1) 35%, rgba(255,250,240,1) 100%);   
 }
 
 .emperor-section {
@@ -13,23 +15,35 @@ body {
 
 .emperor-image,
 .emperor-resume {
-    flex: 1;
     padding: 50px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
+
 
 .emperor-accomplishments,
 .emperor-experience {
     flex: 1;
     box-sizing: border-box;
-    padding: 20px
+    padding: 20px;
+    border-width: 2px;
+    border-style: ridge;
+    border-radius: 10px;
+    border-color: black;
+    background: white;
+}
+.emperor-accomplishments h1 {
+    font-size: 40px;
 }
 
 .emperor-image img {
     max-width: 100%;
     height: auto;
+    border-width: 5px; 
+    border-color: black;
+    border-style: solid;
 }
 
 #attribution {
