@@ -1,21 +1,84 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     background: rgb(238,75,43);
     background: linear-gradient(90deg, rgba(238,75,43,1) 0%, rgba(233,126,136,1) 35%, rgba(255,250,240,1) 100%);   
 }
 
+.divider hr {
+    width: 100%;
+    border-top: 1px solid white;
+}
+
+.dynasty {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: lavender;
+    font-style: italic;
+}
+.header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.header li {
+    display: flex;
+    align-items: center;
+}
+
+.header li a {
+    display: block;
+    color: lavender;
+    padding: 16px;
+}
+
+.header li a:hover {
+    background-color: lightgrey;
+}
+.border {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px 5px 10px 50px;
+}
+
+.emperor-title {
+    padding: 10px 75px 10px 50px;
+    color: lightgrey;
+    font-size: 20px;
+}
+.emperor-title h1 {
+    color: lavender;
+    font-size: 50px;
+    display: inline;
+}
+.emperor-title p {
+    color: darkgrey;
+    font-size: 20px;
+    display: inline;
+    padding: 10px 5px;
+}
+.emperor-title h2 {
+    font-size: 30px;
+}
+
 .emperor-section {
     display: flex;
     flex-direction: row;
-    padding: 10px 50px 100px 50px;
-    border-bottom: 1px solid #ddd;
+    padding: 10px 50px 100px 25px;
 }
 
 .emperor-image,
 .emperor-resume {
-    padding: 50px;
+    padding: 10px 25px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -23,8 +86,8 @@ body {
 }
 
 
-.emperor-accomplishments,
-.emperor-experience {
+.emperor-about,
+.emperor-experience, .emperor-education, .emperor-accomplishments {
     flex: 1;
     box-sizing: border-box;
     padding: 20px;
@@ -34,9 +97,28 @@ body {
     border-color: black;
     background: white;
 }
-.emperor-accomplishments h1 {
-    font-size: 40px;
+.emperor-education h1 {
+    font-size: 30px;
 }
+.emperor-about h1 {
+    font-size: 30px;
+}
+.emperor-experience h1 {
+    font-size: 30px;
+}
+.emperor-experience h2 {
+    font-size: 20px;
+}
+.emperor-experience ul {
+    font-size: 15px;
+}
+.emperor-accomplishments h1 {
+    font-size: 30px
+}
+.emperor-accomplishments ul {
+    font-size: 15px;
+}
+
 
 .emperor-image img {
     max-width: 100%;
