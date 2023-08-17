@@ -38,6 +38,7 @@ body {
     display: block;
     color: lavender;
     padding: 16px;
+    text-decoration: none;
 }
 
 .header li a:hover {
